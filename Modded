@@ -200,27 +200,12 @@ var usenet_sites = [
 ];
 
 var subs_sites = [
-  {   'name': 'OpenSubtitles',
-      'icon': 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwAgMAAAAqbBEUAAAACVBMVEUAAAD///8TExOI954UAAAAk0lEQVQoz62SQQ7DMAgEcSXfe/F/+gQf4D99egeCjJtTpITIG4agtYMsX1nxkr/os56r8EB0+6ANJcxmqEWJV6oMFTq6ynAgm64N8J6j7EksW0CaEL7Z1h0GBjvoBt20oHGoBXyyAmgDTliAe26avk3PoAnxCwVh8nYD1oTJmklsbZTQY1QapVlDZDz34/492K/YD8ElL5+2GoYbAAAAAElFTkSuQmCC',
-      'searchUrl': 'https://www.opensubtitles.org/en/search/imdbid-%nott%',
-      'loggedOutRegex': /Guru Meditation/,
-      'matchRegex': /div itemscope/,
-      'positiveMatch': true,
-      'inSecondSearchBar': true,
-      'both': true},
   {   'name': 'OpenSubtitles (EN)',
       'icon': 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwAgMAAAAqbBEUAAAACVBMVEUAAAD///8TExOI954UAAAAk0lEQVQoz62SQQ7DMAgEcSXfe/F/+gQf4D99egeCjJtTpITIG4agtYMsX1nxkr/os56r8EB0+6ANJcxmqEWJV6oMFTq6ynAgm64N8J6j7EksW0CaEL7Z1h0GBjvoBt20oHGoBXyyAmgDTliAe26avk3PoAnxCwVh8nYD1oTJmklsbZTQY1QapVlDZDz34/492K/YD8ElL5+2GoYbAAAAAElFTkSuQmCC',
       'searchUrl': 'https://www.opensubtitles.org/en/search/sublanguageid-eng/imdbid-%nott%',
       'loggedOutRegex': /Guru Meditation/,
       'matchRegex': /div itemscope/,
       'positiveMatch': true,
-      'inSecondSearchBar': true,
-      'both': true},
-  {   'name': 'OpenSubtitles.com (EN)',
-      'icon': 'https://www.opensubtitles.com/assets/ui/favicons/favicon-64x64-e8e9f196985f98cfaa08b1e0159a1030cfc9b014c464fab6693cd0573382a702.png',
-      'searchUrl': 'https://www.opensubtitles.com/en/en/search-all/q-%tt%/hearing_impaired-hearing_impaired-1/machine_translated-machine_translated-0/trusted_sources-trusted_sources-0',
-      'loggedOutRegex': /Cloudflare|Ray ID/,
-      'matchRegex': /No results found/,
       'inSecondSearchBar': true,
       'both': true},
   {   'name': 'Subscene',
@@ -230,14 +215,6 @@ var subs_sites = [
       'positiveMatch': true,
       'rateLimit': 7500,
       'inSecondSearchBar': true},
-  {   'name': 'Subscene',
-      'searchUrl': 'https://subscene.com/subtitles/searchbytitle?query=%search_string%',
-      'loggedOutRegex': /Please do not hammer|HTTP Error 404/,
-      'matchRegex': />TV-Series</,
-      'positiveMatch': true,
-      'rateLimit': 7500,
-      'inSecondSearchBar': true,
-      'TV': true},
 ];
 
 var pre_databases = [
@@ -322,6 +299,9 @@ var icon_sites_main = [
   {   'name': 'pirates bay)',
       'icon': 'https://www.tpbproxypirate.com/favicon.ico',
       'searchUrl': 'https://thepiratebay.org/search.php?q="%search_string%"+%year%'},
+  {   'name': '1337x',
+      'icon': 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4BAMAAABaqCYtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAAPUExURdY2AN9iOP///9Y2AN9iOE1iXmMAAAADdFJOUwAAAPp2xN4AAADRSURBVDjLtdXtDQIhDAbgxmMBDAP4NcDFOoAI+8/kQXsmV6DgRfuL8KTlhT/ARSkYwHNMZZdyafHS8LhFN4SxhZ7Rf4OW0TUxjqCVyHFjG30ffYG07fZi5FgF5v34c7Sr+f+glXgCAEMWluVhF85VBGqclU5UMOCjiQERq5iHKpga8VnHbClRgYatjmwpboETrlXBoCF2caJEEk3ebuDUR6C7SOSXo0QSOaeKNECg4YejowVyHh1pgsDASGcL5DwdDCXePpgPv2/wyjep4o7f4Q1FlOJhL4s2tAAAAABJRU5ErkJggg==',
+      'searchUrl': 'https://1337x.to/category-search/%search_string%+%year%/1/'},
   {   'name': 'Flix Search',
       'icon': 'https://www.google.com/favicon.ico',
       'searchUrl': 'https://cse.google.com/cse?cx=010443774837511373696:axpyy5u0vmo&q="%search_string%"+%year%'},
@@ -345,7 +325,10 @@ var icon_sites_main = [
       'searchUrl': 'https://cse.google.com/cse?cx=006516753008110874046:osnah6w0yw8#gsc.tab=0&gsc.q=%search_string%&gsc.sort='},
   {   'name': 'YouTube',
       'icon': 'https://www.youtube.com/s/desktop/640aba68/img/favicon_32.png',
-      'searchUrl': 'https://www.youtube.com/results?search_query="%search_string%"+%year%+trailer'}
+      'searchUrl': 'https://www.youtube.com/results?search_query="%search_string%"+%year%+trailer'},
+  {   'name': 'Subscene',
+      'icon': 'https://subscene.com/favicon.ico',
+      'searchUrl': 'https://subscene.com/subtitles/searchbytitle?query=%search_string%'},
 ];
 
 // Class of these should be renamed(search: "class of the special buttons").
@@ -1103,7 +1086,7 @@ function perform(elem, movie_id, movie_title, movie_title_orig, is_tv, is_movie,
 // Runs when "Load on Start?" is disabled.
 function displayButton() {
   var p = $('<p />').attr('id', 'imdbscout_button');
-  p.append($('<button>Load links</button>').css({'background-color':'#F5C518', 'color':'blue', 'font-weight':'bold'}).click(function() {
+  p.append($('<button>Load links</button>').css({'background-color':'#0277bd', 'color':'white', 'font-weight':''}).click(function() {
     $('#imdbscout_button').remove();
     if (onSearchPage) {
       performSearch();
