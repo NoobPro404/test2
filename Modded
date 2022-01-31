@@ -294,7 +294,7 @@ var sites = public_sites.concat(private_sites, german_sites, usenet_sites, custo
 var icon_sites_main = [
   {   'name': 'GTD)',
       'icon': 'https://ssl.gstatic.com/images/branding/product/2x/hh_drive_24dp.png',
-      'searchUrl': 'https://drive.google.com/drive/u/4/search?q=type:video+"%search_string%"+%year%+yts',
+      'searchUrl': 'https://drive.google.com/drive/u/4/search?q=type:video+"%search_string%"+%year%',
       'showByDefault': false},
   {   'name': 'pirates bay)',
       'icon': 'https://www.tpbproxypirate.com/favicon.ico',
