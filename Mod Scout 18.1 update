@@ -177,11 +177,10 @@ var public_sites = [
       'positiveMatch': true,
       'rateLimit': 7500,
       'TV': true},
-  {   'name': 'Blu-ray',
+  {   'name': 'zBlu-ray',
       'icon': 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAADeUExURVO29Vq59Vu59Vy59V269WC79W6/9W+/9XDA9XDB9nDC93HC93PC9nXE93bG9njF93vF9n3I94DH9oHG9oLH9oTI9oXJ9orK9orN+IvK94zM94zO+I3L943O+JDN95HP+JHQ+JPP95XQ+JbQ95jU+ZnR+JzR+JzS95zT+J3S+J3T+J3U+J7S+J/T+J/U+KDT+KPV+KTX+anX+K7Z+q/a+bHc+bbf+rrf+cTk+sXk+8jk+svl+svm+8zn+9vt/Nvu/Nzu/Nzv/N3v/ODv/OHw/Ojz/Onz/er0/er1/f///532i+4AAAC+SURBVDjLtdNFDsNADEDRFFxmZmZmZs79L9TUo1ZZOGOpamdlK0/K6EdRgDnK74CqO9cRA7RT54DapMFpf3wLEvTsNkdmKkCBAi5chzhXKODH0ceBEs55CrhfU/yBc4gCk1qnvxB3LJulHbYRMElBCsAqL3lgU58DFPACWJJzIZYGHbRXd/UfgwKw5sAYl7RhatjgkjVKDQ1xhwQBquForD0Tzy8eqsPt/glRZEIN5CV3OVnqVSvo/Mev9zV4Aq22bvwYC8iHAAAAAElFTkSuQmCC',
       'searchUrl': 'https://www.blu-ray.com/search/?quicksearch=1&quicksearch_country=all&quicksearch_keyword=%tt%&section=theatrical',
       'matchRegex': /return any results/,
-      'inSecondSearchBar': true,
       'both': true},
 ];
 
@@ -3272,7 +3271,7 @@ var config_fields = {
     'type': 'text',
     'default': '69,49'
   },
-  'ratings_cfg_omdb_apikey': {
+/*  'ratings_cfg_omdb_apikey': {
     'label': 'OMDb API key:&nbsp',
     'type': 'text',
     'default': ''
@@ -3454,7 +3453,7 @@ var config_fields = {
     'type': 'checkbox',
     'label': "Debug?",
     'default': false
-  },
+  },*/
   'milkie_authToken': {
     'label': 'Milkie:',
     'section': 'Authorization Tokens:',
