@@ -150,7 +150,7 @@ var public_sites = [
       'matchRegex': /Hey! No result found!/,
       'both': true},
   {   'name': 'Flix Search Pro',
-      'icon': 'https://avatars.githubusercontent.com/u/44333466?v=4',
+      'icon': 'https://img8.uploadhouse.com/fileuploads/29715/29715608dc5ff5c7a771de26ec36c41bed6f04f4.png',
       'searchUrl': 'https://cse.google.com/cse?cx=006516753008110874046:cfdhwy9o57g#gsc.tab=0&gsc.q=%search_string%+%year%&gsc.sort=',
       'matchRegex': /No Results/,
       'spaceEncode': '+',
